@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "intentapi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/intentapi.py"
+    }
+  ]
+}
